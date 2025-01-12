@@ -96,10 +96,10 @@ export default function ChatArea({ className }: { className?: string }) {
                   className="prose dark:prose-invert max-w-none"
                   components={{
                     // 自定义代码块样式
-                    code({ node, inline, className, children, ...props }) {
+                    code({ inline, className: baseClassName, children, ...props }) {
                       return (
                         <code
-                          className={`${className} ${
+                          className={`${baseClassName} ${
                             inline 
                               ? 'bg-gray-200 dark:bg-gray-600 px-1 py-0.5 rounded' 
                               : 'block bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto'
@@ -111,7 +111,7 @@ export default function ChatArea({ className }: { className?: string }) {
                       );
                     },
                     // 自定义链接样式
-                    a({ node, className, children, ...props }) {
+                    a({ children, ...props }) {
                       return (
                         <a
                           className="text-blue-500 hover:text-blue-600 underline"

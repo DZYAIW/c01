@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Sidebar({ className }: { className?: string }) {
-  const [chats, setChats] = useState([]);
+  const [chats, _setChats] = useState([]);
 
   return (
     <div className={`flex flex-col ${className}`}>
