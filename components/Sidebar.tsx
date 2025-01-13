@@ -3,8 +3,8 @@
 import { useState } from 'react';
 
 export default function Sidebar({ className }: { className?: string }) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [chats, _setChats] = useState([]);
+  
+  const [chats] = useState([]);
 
   return (
     <div className={`flex flex-col ${className}`}>
