@@ -3,13 +3,14 @@
 import { useState } from 'react';
 
 export default function Sidebar({ className }: { className?: string }) {
-  const [chats, _setChats] = useState([]);
+  
+  const [chats] = useState([]);
 
   return (
     <div className={`flex flex-col ${className}`}>
       {/* 顶部标题区域 */}
       <div className="p-4 border-b border-gray-200 dark:border-gray-700">
-        <h2 className="text-lg font-semibold">聊天记录</h2>
+        <h2 className="text-lg font-semibold">聊天记录D1</h2>
       </div>
 
       {/* 新建聊天按钮 */}

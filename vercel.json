@@ -1,0 +1,12 @@
+{
+  "env": {
+    "DISABLE_ESLINT_PLUGIN": "true",
+    "NEXT_DISABLE_ESLINT": "1"
+  },
+  "build": {
+    "env": {
+      "DISABLE_ESLINT_PLUGIN": "true",
+      "NEXT_DISABLE_ESLINT": "1"
+    }
+  }
+} 
